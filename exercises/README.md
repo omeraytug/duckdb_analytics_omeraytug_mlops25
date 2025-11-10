@@ -1,2 +1,2 @@
-# Exercises folder
+# Exercise folder
 
