@@ -1,17 +1,39 @@
--- count number of rows
 SELECT
-    COUNT(*) AS number_jobs
+	COUNT(*)
 FROM
-    data_jobs;
+	main.data_jobs
+WHERE
+	salary_in_usd < 50000 ;
 
--- count number of rows where salary > 100k
+
+-- find entry level jobs
 SELECT
-    COUNT(*) AS number_jobs
+	*
 FROM
-    data_jobs
-WHERE 
-    salary_in_usd > 100_000;
+	main.data_jobs
+WHERE
+	experience_level = 'EN';
+
+-- find median salary for entry level jobs
+SELECT
+	MEDIAN(salary_in_usd) AS median_salary_usd
+FROM
+	main.data_jobs
+WHERE
+	experience_level = 'EN';
+
+-- find median salary for mid level jobs
+SELECT
+	MEDIAN(salary_in_usd) AS median_salary_usd
+FROM
+	main.data_jobs
+WHERE
+	experience_level = 'MI';
+	
 
 
-SELECT * FROM data_jobs
-WHERE experience_level = 'EN';
+
+
+
+
+
