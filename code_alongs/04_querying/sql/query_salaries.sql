@@ -48,6 +48,7 @@ SELECT
 FROM
     data_jobs;
 
+
 SELECT DISTINCT
     employment_type
 FROM

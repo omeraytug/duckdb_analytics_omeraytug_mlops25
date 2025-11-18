@@ -3,10 +3,12 @@ SELECT
 FROM
 	main.data_jobs
 WHERE
-	salary_in_usd < 50000 ;
+	salary_in_usd < 50000;
 
 
 -- find entry level jobs
+SELECT DISTINCT experience_level FROM data_jobs;
+
 SELECT
 	*
 FROM
