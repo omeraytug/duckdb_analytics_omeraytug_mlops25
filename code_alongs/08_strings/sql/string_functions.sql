@@ -12,3 +12,9 @@ SELECT
     REGEXP_REPLACE (TRIM(description), ' +', ' ', 'g') AS regex_cleaned
 FROM
     staging.glossary;
+
+SELECT
+    'hej på dig' as sl,
+    REVERSE (sl),
+    'ni talar bra latin' as pl,
+    REVERSE (pl);
