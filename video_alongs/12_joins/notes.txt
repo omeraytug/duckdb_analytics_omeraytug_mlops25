@@ -1,0 +1,12 @@
+when we are talking about joins, we are working on columns. not rows as we do in set operations!
+
+-inner join: similar to intersect. common columns will be chosen. intersect of columns in table a and b
+
+-left join: A and B - take everything from a and corresponding columns from B
+
+-right join: A and B - take everything from B and corresponding columns from A
+
+-full join: A and B - join everything
+
+
+-cross join - 
