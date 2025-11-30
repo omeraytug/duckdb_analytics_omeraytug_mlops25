@@ -1,7 +1,7 @@
 set theory explained with venn diagrams
 -intersect: common ones in two diagrams will be chosen 
 
--union: when A union B, by default you want get duplicates. 
+-union: when A union B, by default you wont get duplicates. 
 
 -except: A except B - you get everything from A where it does not exist in B
 
